@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.Core", "BnsBinTool.Core\BnsBinTool.Core.csproj", "{29E6020C-4FEB-41B8-AB01-F50B9E81A085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.Tests", "BnsBinTool.Tests\BnsBinTool.Tests.csproj", "{D8D173D2-A80F-4B6C-971C-44BEE13078AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{381114A3-071D-40E3-AB5F-2CD63D28208C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.StringDumper", "Tools\BnsBinTool.StringDumper\BnsBinTool.StringDumper.csproj", "{23155591-723C-469F-BF8D-A84B65B58862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.BinDumper", "Tools\BnsBinTool.BinDumper\BnsBinTool.BinDumper.csproj", "{7701B549-8780-4DF0-A4D3-8743CB1F1EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.Info", "Tools\BnsBinTool.Info\BnsBinTool.Info.csproj", "{15CC1E85-6302-4DFD-8F91-274422F554A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.Xml", "Tools\BnsBinTool.Xml\BnsBinTool.Xml.csproj", "{1410B1BA-D14D-481D-A48D-61538EAE6DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BnsBinTool.DefsToSharp", "Tools\BnsBinTool.DefsToSharp\BnsBinTool.DefsToSharp.csproj", "{1956C446-17D7-4E3F-8422-194AEBB5E574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29E6020C-4FEB-41B8-AB01-F50B9E81A085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E6020C-4FEB-41B8-AB01-F50B9E81A085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E6020C-4FEB-41B8-AB01-F50B9E81A085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E6020C-4FEB-41B8-AB01-F50B9E81A085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D173D2-A80F-4B6C-971C-44BEE13078AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D173D2-A80F-4B6C-971C-44BEE13078AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D173D2-A80F-4B6C-971C-44BEE13078AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D173D2-A80F-4B6C-971C-44BEE13078AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23155591-723C-469F-BF8D-A84B65B58862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23155591-723C-469F-BF8D-A84B65B58862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23155591-723C-469F-BF8D-A84B65B58862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23155591-723C-469F-BF8D-A84B65B58862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7701B549-8780-4DF0-A4D3-8743CB1F1EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7701B549-8780-4DF0-A4D3-8743CB1F1EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7701B549-8780-4DF0-A4D3-8743CB1F1EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7701B549-8780-4DF0-A4D3-8743CB1F1EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15CC1E85-6302-4DFD-8F91-274422F554A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CC1E85-6302-4DFD-8F91-274422F554A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CC1E85-6302-4DFD-8F91-274422F554A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CC1E85-6302-4DFD-8F91-274422F554A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1410B1BA-D14D-481D-A48D-61538EAE6DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1410B1BA-D14D-481D-A48D-61538EAE6DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1410B1BA-D14D-481D-A48D-61538EAE6DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1410B1BA-D14D-481D-A48D-61538EAE6DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1956C446-17D7-4E3F-8422-194AEBB5E574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1956C446-17D7-4E3F-8422-194AEBB5E574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1956C446-17D7-4E3F-8422-194AEBB5E574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1956C446-17D7-4E3F-8422-194AEBB5E574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23155591-723C-469F-BF8D-A84B65B58862} = {381114A3-071D-40E3-AB5F-2CD63D28208C}
+		{7701B549-8780-4DF0-A4D3-8743CB1F1EE3} = {381114A3-071D-40E3-AB5F-2CD63D28208C}
+		{15CC1E85-6302-4DFD-8F91-274422F554A5} = {381114A3-071D-40E3-AB5F-2CD63D28208C}
+		{1410B1BA-D14D-481D-A48D-61538EAE6DBA} = {381114A3-071D-40E3-AB5F-2CD63D28208C}
+		{1956C446-17D7-4E3F-8422-194AEBB5E574} = {381114A3-071D-40E3-AB5F-2CD63D28208C}
+	EndGlobalSection
+EndGlobal

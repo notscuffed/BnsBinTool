@@ -1,0 +1,8 @@
+bin
+obj
+.idea
+.vs
+*.user
+out
+/Tools
+/Src/Playground

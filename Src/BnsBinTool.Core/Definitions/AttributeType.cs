@@ -1,0 +1,39 @@
+﻿namespace BnsBinTool.Core.Definitions
+{
+    public enum AttributeType
+    {
+        TNone,
+        TInt8,
+        TInt16,
+        TInt32,
+        TInt64,
+        TFloat32,
+        TBool,
+        TString,
+        TSeq,
+        TSeq16,
+        TRef,
+        TTRef,
+        TSub,
+        TSu,
+        TVector16,
+        TVector32,
+        TIColor,
+        TFColor,
+        TBox,
+        TAngle,
+        TMsec,
+        TDistance,
+        TVelocity,
+        TProp_seq,
+        TProp_field,
+        TScript_obj,
+        TNative,
+        TVersion,
+        TIcon,
+        TTime32,
+        TTime64,
+        TXUnknown1,
+        TXUnknown2
+    }
+}

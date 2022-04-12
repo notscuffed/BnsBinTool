@@ -1,0 +1,38 @@
+Dumps bin to xml project, compiles xml to bin.
+Usage: bnsxml [action]
+
+Samples:
+  > bnsxml dump datafile.bin localfile.bin "D:\definitions\TableDef 0.0.123.4"
+  > bnsxml dump -output="./Output" datafile.bin localfile.bin D:\definitions\TableDef 0.0.123.4
+  > bnsxml compile ./Output "D:\definitions\TableDef 0.0.123.4"
+  > bnsxml compile -once ./Output "D:\definitions\TableDef 0.0.123.4"
+
+Global switches:
+  -nospam                   Don't include time and ram usage in log messages
+  -exceptions               Show detailed exceptions
+
+Available actions:
+  > dump [datafile.bin path] [localfile.bin path] [definitions path]
+    Switches:
+      -novalidate           Ignore some datafile validation errors
+      -nodef                Don't prepend table definition comment in dumped xmls
+      -output=".\Output"    Changes output path
+      -only="table1,table2" Dumps only specific table xmls
+      -xml="path"           Path to extracted xml.dat to load aliases from
+      -local="path"         Path to extracted local.dat to load aliases from
+
+  > compile [project folder] [definitions path]
+    Switches:
+      -delay=200            Changes the delay before saving
+      -watchall             Compile on all file extensions instead of just *.xml
+      -once                 Compile once and quit
+      -xml="path"           Path to extracted xml.dat to load aliases from
+      -local="path"         Path to extracted local.dat to load aliases from
+
+  > transform [patches path] [definitions path] [datafile1.bin] [datafileN.bin] [outdatafile1.bin] [out..N.bin]...
+    Switches:
+      -64                   64-bit datafiles
+      -xml="path"           Path to extracted xml.dat to load aliases from
+      -local="path"         Path to extracted local.dat to load aliases from
+      -rebuildautotables    Rebuilds auto tables
+      
