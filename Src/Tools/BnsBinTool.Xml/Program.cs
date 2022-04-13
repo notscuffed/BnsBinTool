@@ -142,7 +142,9 @@ namespace BnsBinTool.Xml
 
             _flagValue.TryGetValue("xml", out var extractedXmlDatPath);
             _flagValue.TryGetValue("local", out var extractedLocalDatPath);
-
+            
+            var is64Bit = _flags.Contains("64");
+            
             var definitions = DatafileDefinition.Load(definitionsPath);
             var xmlToDatafile = new XmlToDatafileConverter(projectRoot, definitions, extractedXmlDatPath, extractedLocalDatPath);
 
@@ -162,7 +164,7 @@ namespace BnsBinTool.Xml
             {
                 if (Debugger.IsAttached)
                 {
-                    xmlToDatafile.ConvertXmlsToDatafile();
+                    xmlToDatafile.ConvertXmlsToDatafile(is64Bit);
                     if (compileOnce)
                         return 0;
                 }
@@ -170,7 +172,7 @@ namespace BnsBinTool.Xml
                 {
                     try
                     {
-                        xmlToDatafile.ConvertXmlsToDatafile();
+                        xmlToDatafile.ConvertXmlsToDatafile(is64Bit);
                         if (compileOnce)
                             return 0;
                     }

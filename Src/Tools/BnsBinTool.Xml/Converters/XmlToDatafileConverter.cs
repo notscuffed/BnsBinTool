@@ -56,7 +56,7 @@ namespace BnsBinTool.Xml.Converters
             }
         }
 
-        public void ConvertXmlsToDatafile()
+        public void ConvertXmlsToDatafile(bool is64Bit)
         {
             Logger.StartTimer();
 
@@ -66,13 +66,13 @@ namespace BnsBinTool.Xml.Converters
 
             if (_data == null)
             {
-                _data = Datafile.ReadFromFile(datafilePath, false);
+                _data = Datafile.ReadFromFile(datafilePath, false, is64Bit);
                 Logger.LogTime($"Loaded {datafilePath}");
             }
 
             if (_local == null)
             {
-                _local = Datafile.ReadFromFile(localfilePath, false);
+                _local = Datafile.ReadFromFile(localfilePath, false, is64Bit);
                 Logger.LogTime($"Loaded {localfilePath}");
             }
 
